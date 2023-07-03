@@ -1,1 +1,180 @@
+:root {
+  --color1: #f3dfd8;
+  --color2: #e1af9e;
+  --black: rgb(16, 16, 16);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: --black;;
+  background-color:var(--color1);
+}
 
+h1 {
+  font-size: 70px;
+}
+
+/*NAVIGATION BAR*/
+header {
+  width: 100%;
+  height: 10%;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+#header-img{
+  width: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin-right: 25px;
+  color: inherit;
+  font-size: 20px;
+}
+
+/*ABOUT SECTION*/
+main {
+  padding-top: 100px;
+}
+
+#heading-blue {
+  color: var(/*make another color*/);
+}
+
+.About {
+  margin: 100px;
+  padding: 50px;
+  background-color: var(--color2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.heading {
+  margin-right: 20px;
+  width: 600px;
+}
+
+.description {
+  font-size: 30px;
+}
+
+/*PRODUCTS*/
+.Products {
+  padding: 50px;
+  background-color: var(--black);
+  color: var(--color1);
+  text-align: center;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Products > h1 {
+  margin-bottom: 20px;
+}
+.product-pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/*PRICING*/
+.Pricing {
+  background-color: var(--color2);
+  width: 100%;
+  height: 500px;
+  padding: 50px;
+  text-align: center;
+}
+
+/*CONTACT*/
+.Contact {
+  background-color: var(--color1);
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+#form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+  background-color: var(--black);
+  color: var(--color2);
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin: 20px;
+  font-size: 30px;
+}
+
+input {
+  background-color: var(--color2);
+  padding: 5px;
+  width: 300px;
+}
+
+textarea {
+  margin-top: 10px;
+  background-color: var(--color2);
+  padding: 5px;
+  width: 300px;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1024){
+   .logo {
+    color: white;
+  }
+}
