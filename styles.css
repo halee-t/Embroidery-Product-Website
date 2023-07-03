@@ -35,6 +35,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  margin-left: 40px;
 }
 
 nav > ul {
@@ -172,6 +173,7 @@ textarea {
   margin: 0 auto;
 }
 
+/*ADD MEDIA QUERIES FOR DIFFERENT SIZED SCREENS*/
 /*MEDIA QUERIES*/
 @media (max-width: 1024){
    .logo {
